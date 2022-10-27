@@ -1,4 +1,3 @@
-using ReadyPlayerMe;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +9,7 @@ using GLTFast;
 public class WebAvatarLoader_gltfast : MonoBehaviour
 {
     private string AvatarURL = "";
-    private AvatarLoader avatarLoader;
+    // private AvatarLoader avatarLoader;
 
     public Transform spawnPoint;
     private Vector3 originPosition;
@@ -44,8 +43,8 @@ public class WebAvatarLoader_gltfast : MonoBehaviour
 
     private void Start()
     {
-        PartnerSO partner = Resources.Load<PartnerSO>("Partner");
-        WebInterface.SetupRpmFrame(partner.Subdomain);
+        // PartnerSO partner = Resources.Load<PartnerSO>("Partner");
+        // WebInterface.SetupRpmFrame(partner.Subdomain);
     }
 
     //public void OnWebViewAvatarGenerated(string avatarUrl)
